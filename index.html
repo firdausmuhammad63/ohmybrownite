@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhajir's Kitchen - Halal Premium</title>
+    <title>Oh My Brownite- Donuts Pumpkin Premium</title>
     
     <!-- Tailwind CSS CDN -->
     <link rel="stylesheet" href="./dist/output.css">
@@ -24,7 +24,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, #eaa466 0%, #6a478d 100%);
+            background: linear-gradient(135deg, #E6D18B 0%, #6a478d 100%);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -64,7 +64,7 @@
         
         /* Custom Colors */
         :root {
-            --primary-brown: #8B4513;
+            /* --primary-brown: #8B4513; */
             --light-brown: #D2B48C;
             --cream: #F5E6D3;
             --dark-brown: #654321;
@@ -306,51 +306,49 @@
                 <div class="loader-text">Memuat Oh My Brownite..</div>
             </div>
         </div>
-        
+
     <!-- Navbar -->
-    <!-- Navbar -->
-<nav class="navbar fixed top-0 left-0 w-full flex justify-between items-center px-6 py-3 transition-all duration-300 z-50 bg-transparent">
-  
-  <!-- Brand -->
-  <div class="flex items-center space-x-3 p-2 rounded-xl w-fit">
-    <div class="w-12 h-12 rounded-full overflow-hidden shadow flex items-center justify-center">
-      <img src="assets/images/oh-8.jpeg" alt="Logo Oh.my brownite" class="w-full h-full object-cover">
+    <nav class="navbar fixed top-0 left-0 w-full flex justify-between items-center px-6 py-3 transition-all duration-300 z-50 bg-transparent">
+    
+    <!-- Brand -->
+    <div class="flex items-center space-x-3 p-2 rounded-xl w-fit">
+        <div class="w-12 h-12 rounded-full overflow-hidden shadow flex items-center justify-center">
+        <img src="assets/images/oh-8.jpeg" alt="Logo Oh.my brownite" class="w-full h-full object-cover">
+        </div>
+        <div>
+        <h1 class="text-xl font-bold text-[#E6D18B] leading-tight">Oh.my brownite</h1>
+        <p class="text-sm text-[#E6D18B]/80">Your Mood Booster</p>
+        </div>
     </div>
-    <div>
-      <h1 class="text-xl font-bold text-[#E6D18B] leading-tight">Oh.my brownite</h1>
-      <p class="text-sm text-[#E6D18B]/80">Your Mood Booster</p>
+
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex items-center space-x-8">
+        <a href="#home" class="nav-link text-[#E6D18B] hover:text-white transition-colors duration-300">Beranda</a>
+        <a href="#products" class="nav-link text-[#E6D18B] hover:text-white transition-colors duration-300">Produk</a>
+        <a href="#shopeefood" class="nav-link text-[#E6D18B] hover:text-white transition-colors duration-300">Market Place</a>
+        <!-- <a href="#services" class="nav-link text-[#E6D18B] hover:text-white transition-colors duration-300">Layanan</a>
+        <a href="#faq" class="nav-link text-[#E6D18B] hover:text-white transition-colors duration-300">FAQ</a> -->
     </div>
-  </div>
 
-  <!-- Desktop Menu -->
-  <div class="hidden md:flex items-center space-x-8">
-    <a href="#home" class="nav-link text-[#E6D18B] hover:text-white transition-colors duration-300">Beranda</a>
-    <a href="#products" class="nav-link text-[#E6D18B] hover:text-white transition-colors duration-300">Produk</a>
-    <a href="#services" class="nav-link text-[#E6D18B] hover:text-white transition-colors duration-300">Layanan</a>
-    <a href="#faq" class="nav-link text-[#E6D18B] hover:text-white transition-colors duration-300">FAQ</a>
-    <a href="#order" class="nav-link text-[#E6D18B] hover:text-white transition-colors duration-300">Pesan</a>
-  </div>
+    <!-- Hamburger (Mobile Only) -->
+    <button id="hamburger" class="hamburger md:hidden flex flex-col items-center space-y-1.5 z-[100] transition-all duration-300">
+        <span class="line w-7 h-1 bg-[#E6D18B] rounded-full transition-all duration-300"></span>
+        <span class="line w-7 h-1 bg-[#E6D18B] rounded-full transition-all duration-300"></span>
+        <span class="line w-7 h-1 bg-[#E6D18B] rounded-full transition-all duration-300"></span>
+    </button>
 
-  <!-- Hamburger (Mobile Only) -->
-  <button id="hamburger" class="hamburger md:hidden flex flex-col items-center space-y-1.5 z-[100] transition-all duration-300">
-    <span class="line w-7 h-1 bg-[#E6D18B] rounded-full transition-all duration-300"></span>
-    <span class="line w-7 h-1 bg-[#E6D18B] rounded-full transition-all duration-300"></span>
-    <span class="line w-7 h-1 bg-[#E6D18B] rounded-full transition-all duration-300"></span>
-  </button>
-
-  <!-- Mobile Menu -->
-  <div id="mobileMenu"
-    class="absolute top-full left-0 right-0 bg-white shadow-lg transform scale-y-0 opacity-0 origin-top transition-all duration-300 md:hidden pointer-events-none">
-    <div class="flex flex-col py-4">
-      <a href="#home" class="mobile-nav-link px-6 py-3 text-amber-800 hover:bg-amber-50 transition-colors">Beranda</a>
-      <a href="#products" class="mobile-nav-link px-6 py-3 text-amber-800 hover:bg-amber-50 transition-colors">Produk</a>
-      <a href="#services" class="mobile-nav-link px-6 py-3 text-amber-800 hover:bg-amber-50 transition-colors">Layanan</a>
-      <a href="#faq" class="mobile-nav-link px-6 py-3 text-amber-800 hover:bg-amber-50 transition-colors">FAQ</a>
-      <a href="#order" class="mobile-nav-link px-6 py-3 text-amber-800 hover:bg-amber-50 transition-colors">Pesan</a>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu"
+        class="absolute top-full left-0 right-0 bg-white shadow-lg transform scale-y-0 opacity-0 origin-top transition-all duration-300 md:hidden pointer-events-none">
+        <div class="flex flex-col py-4">
+            <a href="#home" class="mobile-nav-link px-6 py-3 text-amber-800 hover:bg-amber-50 transition-colors">Beranda</a>
+            <a href="#products" class="mobile-nav-link px-6 py-3 text-amber-800 hover:bg-amber-50 transition-colors">Produk</a>
+            <a href="#shopeefood" class="mobile-nav-link px-6 py-3 text-amber-800 hover:bg-amber-50 transition-colors">Market Place</a>
+            <!-- <a href="#services" class="mobile-nav-link px-6 py-3 text-amber-800 hover:bg-amber-50 transition-colors">Layanan</a>
+            <a href="#faq" class="mobile-nav-link px-6 py-3 text-amber-800 hover:bg-amber-50 transition-colors">FAQ</a> -->
+        </div>
     </div>
-  </div>
-</nav>
-
+    </nav>
 
     <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -391,168 +389,186 @@
     </script>
 
     <!-- Hero Section -->
-       <section id="home" class="hero-slider relative">
-  <!-- Slide 1 -->
-  <div class="slide active relative" style="background-image: url('assets/images/oh-1.jpeg');">
-    <div class="absolute inset-0 bg-black/30"></div> <!-- overlay gelap -->
-    <div class="relative z-10 h-full flex items-center justify-center text-center text-white px-4">
-      <div class="slide-up">
-        <h1 class="text-4xl md:text-6xl font-bold mb-4">Strudel & Bolen Homemade</h1>
-        <p class="text-lg mb-8 max-w-2xl mx-auto px-8">Nikmati kelezatan strudel dan bolen lembut khas Muhajir’s Kitchen — halal, enak, dan berkualitas.</p>
-        <a href="#order" class="bg-[#E6D18B] hover:bg-[#c6ad5c] text-slate-600 px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105">
-          Pesan Sekarang
-        </a>
-      </div>
-    </div>
-  </div>
+    <section id="home" class="hero-slider relative">
+        <!-- Slide 1 -->
+        <div class="slide active relative" style="background-image: url('assets/images/oh-1.jpeg');">
+            <div class="absolute inset-0 bg-black/30"></div> <!-- overlay gelap -->
+            <div class="relative z-10 h-full flex items-center justify-center text-center text-white px-4">
+            <div class="slide-up">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Pumpkin Donuts</h1>
+                <p class="text-lg mb-8 max-w-2xl mx-auto px-8">Nikmati kelezatan pumpkin Donuts — halal, enak, dan berkualitas.</p>
+                <a href="#products" class="bg-[#E6D18B] hover:bg-[#c6ad5c] text-slate-600 px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105">
+                Pesan Sekarang
+                </a>
+            </div>
+            </div>
+        </div>
 
-  <!-- Slide 2 -->
-  <div class="slide relative" style="background-image: url('assets/images/oh-5.jpeg');">
-    <div class="absolute inset-0 bg-black/30"></div>
-    <div class="relative z-10 h-full flex items-center justify-center text-center text-white px-4">
-      <div class="slide-up">
-        <h1 class="text-4xl md:text-6xl font-bold mb-4">Muhajir’s Kitchen</h1>
-        <p class="text-xl md:text-2xl">Strudel & Bolen Halalan Thoyyiban</p>
-        <p class="text-lg mb-8 max-w-2xl mx-auto px-8">Homemade lezat, dibuat fresh setiap hari</p>
-        <a href="#order" class="bg-[#E6D18B] hover:bg-[#c6ad5c] text-slate-600 px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105">
-          Pesan Sekarang
-        </a>
-      </div>
-    </div>
-  </div>
+        <!-- Slide 2 -->
+        <div class="slide relative" style="background-image: url('assets/images/oh-5.jpeg');">
+            <div class="absolute inset-0 bg-black/30"></div>
+            <div class="relative z-10 h-full flex items-center justify-center text-center text-white px-4">
+            <div class="slide-up">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Oh.my brownite</h1>
+                <p class="text-xl md:text-2xl">Pumpkin Donuts Homemade & Bomboloni</p>
+                <p class="text-lg mb-8 max-w-2xl mx-auto px-8">Homemade lezat, dibuat fresh setiap hari</p>
+                <a href="#products" class="bg-[#E6D18B] hover:bg-[#c6ad5c] text-slate-600 px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105">
+                Pesan Sekarang
+                </a>
+            </div>
+            </div>
+        </div>
 
-  <!-- Slide 3 -->
-  <div class="slide relative" style="background-image: url('assets/images/oh-3.jpeg');">
-    <div class="absolute inset-0 bg-black/30"></div>
-    <div class="relative z-10 h-full flex items-center justify-center text-center text-white px-4">
-      <div class="slide-up">
-        <h1 class="text-4xl md:text-6xl font-bold mb-4">Pilihan Rasa Lezat</h1>
-        <p class="text-xl md:text-2xl">Untuk setiap penikmat</p>
-        <p class="text-lg mb-8 max-w-2xl mx-auto px-8">Dari klasik hingga premium, semua dibuat dengan cinta</p>
-        <a href="#order" class="bg-[#E6D18B] hover:bg-[#c6ad5c] text-slate-600 px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105">
-          Pesan Sekarang
-        </a>
-      </div>
-    </div>
-  </div>
+        <!-- Slide 3 -->
+        <div class="slide relative" style="background-image: url('assets/images/oh-3.jpeg');">
+            <div class="absolute inset-0 bg-black/30"></div>
+            <div class="relative z-10 h-full flex items-center justify-center text-center text-white px-4">
+            <div class="slide-up">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Pilihan Rasa Lezat</h1>
+                <p class="text-xl md:text-2xl">Untuk setiap penikmat</p>
+                <p class="text-lg mb-8 max-w-2xl mx-auto px-8">Dari klasik hingga premium, semua dibuat dengan cinta</p>
+                <a href="#products" class="bg-[#E6D18B] hover:bg-[#c6ad5c] text-slate-600 px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105">
+                Pesan Sekarang
+                </a>
+            </div>
+            </div>
+        </div>
 
-  <!-- Slide 4 -->
-  <div class="slide relative" style="background-image: url('assets/images/oh-4.jpeg');">
-    <div class="absolute inset-0 bg-black/30"></div>
-    <div class="relative z-10 h-full flex items-center justify-center text-center text-white px-4">
-      <div class="slide-up">
-        <h1 class="text-4xl md:text-6xl font-bold mb-4">Muhajir’s Kitchen</h1>
-        <p class="text-xl md:text-2xl">Strudel & Bolen Homemade Premium</p>
-        <p class="text-lg mb-8 max-w-2xl mx-auto">Lembut, lezat, dan halal — <br> kenikmatan yang selalu dirindukan.</p>
-        <a href="#order" class="bg-[#E6D18B] hover:bg-[#c6ad5c] text-slate-600 px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105">
-          Pesan Sekarang
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
+        <!-- Slide 4 -->
+        <div class="slide relative" style="background-image: url('assets/images/oh-4.jpeg');">
+            <div class="absolute inset-0 bg-black/30"></div>
+            <div class="relative z-10 h-full flex items-center justify-center text-center text-white px-4">
+            <div class="slide-up">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Oh.my brownite</h1>
+                <p class="text-xl md:text-2xl">Pumpkin Donuts, Bomboloni & Soft Cookies</p>
+                <p class="text-lg mb-8 max-w-2xl mx-auto">Lembut, lezat, dan halal —kenikmatan yang selalu dirindukan.</p>
+                <a href="#products" class="bg-[#E6D18B] hover:bg-[#c6ad5c] text-slate-600 px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105">
+                Pesan Sekarang
+                </a>
+            </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Products Section -->
     <section id="products" class="py-20 px-4">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16 fade-in">
                 <h2 class="text-3xl md:text-4xl font-bold text-amber-800 mb-4">Katalog Produk</h2>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Pilih Strudel & Bolen favoritmu</p>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Pilih Pumpkin Donuts & Brownies favoritmu</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                <!-- Product 1 -->
                 <div class="product-card bg-white rounded-2xl shadow-lg overflow-hidden fade-in">
                 <img 
-                    src="assets/images/mk-1.jpeg" 
-                    alt="Strudel Browcok Keju Mesis - Muhajir’s Kitchen" 
-                    class="w-full h-60 object-cover"
+                    src="assets/images/oh-4.jpeg" 
+                    alt="Milky Pumpkin Donuts"
+                    class="w-full h-72 object-cover"
                 >
                 <div class="p-6">
                     <!-- Judul -->
                     <h3 class="text-xl font-bold text-amber-800 mb-3">
-                    Strudel Browcok Keju Mesis
+                    Milky Pumpkin Donuts
                     </h3>
 
                     <!-- Detail Produk -->
-                    <div class="mb-4 space-y-2">
+                    <div class="mb-4 space-y-3">
+                    <!-- Topping -->
+                    <div class="flex flex-wrap items-center gap-2 mb-3">
+                        <span class="px-3 py-1 text-sm font-semibold bg-amber-100 text-amber-800 rounded-full ring-1 ring-amber-200">
+                        Vanilla Milk
+                        </span>
+                        <span class="px-3 py-1 text-sm font-semibold bg-amber-100 text-amber-800 rounded-full ring-1 ring-amber-200">
+                        Choco Milk
+                        </span>
+                        <span class="px-3 py-1 text-sm font-semibold bg-amber-100 text-amber-800 rounded-full ring-1 ring-amber-200">
+                        Matcha Milk
+                        </span>
+                    </div>
+
+                    <!-- Isi & Harga -->
                     <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-amber-50 text-amber-700 ring-1 ring-amber-100">
-                        Topping:
-                        <span class="ml-2 text-lg font-bold text-amber-600">Keju Mesis</span>
+                        Isi: <span class="ml-2 text-lg font-bold text-amber-600">6 pcs</span>
                     </span>
                     <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-amber-50 text-amber-700 ring-1 ring-amber-100">
-                        <span class="ml-2 text-lg font-bold text-amber-600">Rp 75.000</span>
+                        <span class="ml-2 text-lg font-bold text-amber-600">Rp 75.000</span>    
                     </span>
                     </div>
 
                     <!-- Deskripsi -->
-                    <p class="text-gray-600 mb-4">
-                    Strudel lembut dengan isian brownies cokelat rich, berpadu topping keju dan meses yang menggugah selera.
+                    <p class="text-gray-600 mb-4 max-w-2xl mx-auto text-left">
+                    Donat labu lembut dengan rasa manis alami, dihiasi topping khas yang menggoda selera.
                     </p>
 
                     <!-- Tombol Pesan -->
                     <button
-                    onclick="orderStrudel1()"
-                    class="w-full bg-amber-600 hover:bg-amber-500 text-white py-3 rounded-full font-semibold transition-all">
+                    onclick="orderDonuts1()"
+                    class="w-full bg-amber-600 hover:bg-amber-500 text-white py-3 rounded-full font-semibold transition-all"
+                    >
                     Pesan via WhatsApp
                     </button>
                 </div>
 
                 <script>
-                    function orderStrudel1() {
-                    const productName = 'Strudel Browcok Keju Mesis';
+                    function orderDonuts1() {
+                    const productName = 'Milky Pumpkin Donuts (6 pcs)';
                     const price = 75000;
                     const message = `Halo! Saya ingin pesan ${productName} seharga Rp ${price.toLocaleString('id-ID')}.`;
-                    const phoneNumber = '6283173901708'; // ganti dengan nomor WhatsApp kamu
+                    const phoneNumber = '6287781792762'; // nomor WhatsApp Oh My Brownite
                     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
                     window.open(url, '_blank');
                     }
                 </script>
                 </div>
-                
+                                
                 <!-- Product 2 -->
                 <div class="product-card bg-white rounded-2xl shadow-lg overflow-hidden fade-in">
                 <img 
-                    src="assets/images/mk-3.jpeg" 
-                    alt="Strudel Browcok Full Mesis - Muhajir’s Kitchen" 
-                    class="w-full h-60 object-cover"
+                    src="assets/images/oh-2.jpeg" 
+                    alt="Pumpkin Bomboloni with Diplomat Cream" 
+                    class="w-full h-72 object-cover"
                 >
                 <div class="p-6">
+
                     <!-- Judul -->
                     <h3 class="text-xl font-bold text-amber-800 mb-3">
-                    Strudel Browcok Full Mesis
+                    Pumpkin Bomboloni with Diplomat Cream
                     </h3>
 
                     <!-- Detail Produk -->
                     <div class="mb-4 space-y-2">
+                    <!-- Isi -->
                     <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-amber-50 text-amber-700 ring-1 ring-amber-100">
-                        Topping:
-                        <span class="ml-2 text-lg font-bold text-amber-600">Full Mesis</span>
+                        Isi: <span class="ml-2 text-lg font-bold text-amber-600">6 pcs</span>
                     </span>
+
+                    <!-- Harga -->
                     <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-amber-50 text-amber-700 ring-1 ring-amber-100">
-                        <span class="ml-2 text-lg font-bold text-amber-600">Rp 75.000</span>
+                        <span class="ml-2 text-lg font-bold text-amber-600">Rp 85.000</span>
                     </span>
                     </div>
 
                     <!-- Deskripsi -->
-                    <p class="text-gray-600 mb-4">
-                    Strudel lembut dengan isian brownies cokelat rich, berpadu topping full meses yang mengundang selera.
+                    <p class="text-gray-600 mb-4 max-w-2xl mx-auto text-left">
+                    Nikmati kelezatan donat labu yang lembut dan manis alami, diisi krim diplomat lembut, dan dihiasi topping menggoda selera — sempurna untuk menemani momen santai Anda.
                     </p>
 
                     <!-- Tombol Pesan -->
                     <button
-                    onclick="orderStrudel2()"
-                    class="w-full bg-amber-600 hover:bg-amber-500 text-white py-3 rounded-full font-semibold transition-all">
+                    onclick="orderBomboloni()"
+                    class="w-full bg-amber-600 hover:bg-amber-500 text-white py-3 rounded-full font-semibold transition-all"
+                    >
                     Pesan via WhatsApp
                     </button>
                 </div>
 
                 <script>
-                    function orderStrudel2() {
-                    const productName = 'Strudel Browcok Full Mesis';
-                    const price = 75000;
+                    function orderBomboloni() {
+                    const productName = 'Pumpkin Bomboloni with Diplomat Cream (6 pcs)';
+                    const price = 85000;
                     const message = `Halo! Saya ingin pesan ${productName} seharga Rp ${price.toLocaleString('id-ID')}.`;
-                    const phoneNumber = '6283173901708'; // ganti dengan nomor WhatsApp kamu
+                    const phoneNumber = '6287781792762'; // nomor WhatsApp Oh My Brownite
                     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
                     window.open(url, '_blank');
                     }
@@ -562,95 +578,105 @@
                 <!-- Product 3 -->
                 <div class="product-card bg-white rounded-2xl shadow-lg overflow-hidden fade-in">
                 <img 
-                    src="assets/images/mk-6.jpeg" 
-                    alt="Strudel Pisang Coklat Keju - Muhajir’s Kitchen" 
-                    class="w-full h-60 object-cover"
+                    src="assets/images/oh-1.jpeg" 
+                    alt="Fudy Brownies" 
+                    class="w-full h-72 object-cover"
                 >
                 <div class="p-6">
-                    <!-- Judul -->
-                    <h3 class="text-xl font-bold text-amber-800 mb-3">
-                    Strudel Piscokju (Pisang Coklat Keju)
-                    </h3>
+                <!-- Judul -->
+                <h3 class="text-xl font-bold text-amber-800 mb-3">
+                    Fudgy Brownies
+                </h3>
 
-                    <!-- Detail Produk -->
-                    <div class="mb-4 space-y-2">
-                    <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-amber-50 text-amber-700 ring-1 ring-amber-100">
-                        Topping:
-                        <span class="ml-2 text-lg font-bold text-amber-600">Pisang Coklat Keju</span>
-                    </span>
-                    <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-amber-50 text-amber-700 ring-1 ring-amber-100">
-                        <span class="ml-2 text-lg font-bold text-amber-600">Rp 70.000</span>
-                    </span>
+               <!-- Detail Produk -->
+                <div class="mb-4 space-y-3">
+                    <!-- Toppings -->
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 text-sm font-semibold bg-amber-100 text-amber-800 rounded-full ring-1 ring-amber-200">Almond</span>
+                        <span class="px-3 py-1 text-sm font-semibold bg-amber-100 text-amber-800 rounded-full ring-1 ring-amber-200">Chocochips</span>
+                        <span class="px-3 py-1 text-sm font-semibold bg-amber-100 text-amber-800 rounded-full ring-1 ring-amber-200">Cheese</span>
+                        <span class="px-3 py-1 text-sm font-semibold bg-amber-100 text-amber-800 rounded-full ring-1 ring-amber-200">Red Velvet Crumbs</span>
+                        <span class="px-3 py-1 text-sm font-semibold bg-amber-100 text-amber-800 rounded-full ring-1 ring-amber-200">Matcha Crumbs</span>
+                        <span class="px-3 py-1 text-sm font-semibold bg-amber-100 text-amber-800 rounded-full ring-1 ring-amber-200">Sea Salt</span>
+                        <span class="px-3 py-1 text-sm font-semibold bg-amber-100 text-amber-800 rounded-full ring-1 ring-amber-200">Mix 2 or 3 Toppings</span>
                     </div>
 
-                    <!-- Deskripsi -->
-                    <p class="text-gray-600 mb-4">
-                    Strudel lembut dengan isian brownies cokelat rich, berpadu topping pisang coklat keju yang memancing selera.
-                    </p>
+                    <!-- Ukuran & Harga -->
+                    <div class="flex flex-wrap gap-2 mt-2">
+                        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-amber-50 text-amber-700 ring-1 ring-amber-100">
+                        Ukuran:
+                        <span class="ml-2 text-lg font-bold text-amber-600">22x10 cm</span>
+                        </span>
+                        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-amber-50 text-amber-700 ring-1 ring-amber-100">
+                        <span class="ml-2 text-lg font-bold text-amber-600">Rp 75.000</span>
+                        </span>
+                    </div>
+                </div>
 
-                    <!-- Tombol Pesan -->
-                    <button
-                    onclick="orderStrudel3()"
+                <!-- Deskripsi -->
+                <p class="text-gray-600 mb-4 max-w-2xl mx-auto">
+                Fudgy Brownies lembut dan kaya cokelat, dengan berbagai pilihan topping. Cocok dinikmati sendiri atau dibagikan bersama teman dan keluarga.
+                </p>
+
+                <!-- Tombol Pesan -->
+                <button
+                    onclick="orderFudgyBrownies()"
                     class="w-full bg-amber-600 hover:bg-amber-500 text-white py-3 rounded-full font-semibold transition-all">
                     Pesan via WhatsApp
-                    </button>
+                </button>
                 </div>
 
                 <script>
-                    function orderStrudel3() {
-                    const productName = 'Strudel Pisang Coklat Keju';
-                    const price = 70000;
+                function orderFudgyBrownies() {
+                    const productName = 'Fudgy Brownies';
+                    const price = 75000;
                     const message = `Halo! Saya ingin pesan ${productName} seharga Rp ${price.toLocaleString('id-ID')}.`;
-                    const phoneNumber = '6283173901708'; // ganti dengan nomor WhatsApp kamu
+                    const phoneNumber = '6287781792762'; // ganti dengan nomor WhatsApp kamu
                     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
                     window.open(url, '_blank');
-                    }
+                }
                 </script>
                 </div>
-                
+
                 <!-- Product 4 -->
                 <div class="product-card bg-white rounded-2xl shadow-lg overflow-hidden fade-in">
                 <img 
-                    src="assets/images/mk-9.jpeg" 
-                    alt="Strudel Browcok Full Keju - Muhajir’s Kitchen" 
-                    class="w-full h-60 object-cover"
+                    src="assets/images/oh-3.jpeg" 
+                    alt="Soft Cookies"
+                    class="w-full h-72 object-cover"
                 >
                 <div class="p-6">
                     <!-- Judul -->
                     <h3 class="text-xl font-bold text-amber-800 mb-3">
-                    Strudel Browcok Full Keju
+                    Soft Cookies
                     </h3>
 
                     <!-- Detail Produk -->
                     <div class="mb-4 space-y-2">
                     <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-amber-50 text-amber-700 ring-1 ring-amber-100">
-                        Topping:
-                        <span class="ml-2 text-lg font-bold text-amber-600">Full Keju</span>
-                    </span>
-                    <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-amber-50 text-amber-700 ring-1 ring-amber-100">
-                        <span class="ml-2 text-lg font-bold text-amber-600">Rp 75.000</span>
+                        <span class="ml-2 text-lg font-bold text-amber-600">Rp 20.000</span>
                     </span>
                     </div>
 
                     <!-- Deskripsi -->
-                    <p class="text-gray-600 mb-4">
-                    Strudel lembut dengan isian brownies cokelat rich, berpadu topping full keju yang memanjakan lidah.
+                    <p class="text-gray-600 mb-4 max-w-2xl mx-auto">
+                    Soft Cookies lembut, manis, dan meleleh di mulut, dengan topping keju yang gurih dan memanjakan lidah. Cocok untuk cemilan atau dibagikan bersama teman.
                     </p>
 
                     <!-- Tombol Pesan -->
                     <button
-                    onclick="orderStrudel4()"
+                    onclick="orderSoftCookies()"
                     class="w-full bg-amber-600 hover:bg-amber-500 text-white py-3 rounded-full font-semibold transition-all">
                     Pesan via WhatsApp
                     </button>
                 </div>
 
                 <script>
-                    function orderStrudel4() {
-                    const productName = 'Strudel Browcok Full Keju';
-                    const price = 75000;
+                    function orderSoftCookies() {
+                    const productName = 'Soft Cookies';
+                    const price = 20000;
                     const message = `Halo! Saya ingin pesan ${productName} seharga Rp ${price.toLocaleString('id-ID')}.`;
-                    const phoneNumber = '6283173901708'; // ganti dengan nomor WhatsApp kamu
+                    const phoneNumber = '6287781792762'; // ganti dengan nomor WhatsApp kamu
                     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
                     window.open(url, '_blank');
                     }
@@ -659,100 +685,106 @@
 
                 <!-- Product 5 -->
                 <div class="product-card bg-white rounded-2xl shadow-lg overflow-hidden fade-in relative">
-                <!-- Gambar dengan label di pojok kanan atas -->
+                <!-- Gambar -->
                 <div class="relative">
                     <img 
-                    src="assets/images/mk-7.jpeg" 
-                    alt="Strudel Browcok Coklat Keju SPESIAL - Muhajir’s Kitchen" 
-                    class="w-full h-60 object-cover"
+                    src="assets/images/oh-6.jpeg" 
+                    alt="Bolu Ketan Hitam Keju Lumer" 
+                    class="w-full h-72 object-cover"
                     >
-                    <!-- Label Spesial -->
-                    <span class="absolute top-3 right-3 bg-amber-600 text-white text-sm font-semibold px-3 py-1 rounded-full shadow-md">
-                    🌟 Spesial
-                    </span>
                 </div>
 
                 <!-- Konten -->
                 <div class="p-6">
-                    <h3 class="text-xl font-bold text-amber-800 mb-3">
-                    Strudel Browcok Coklat Keju
-                    </h3>
-
-                    <div class="mb-4 space-y-2">
-                        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-amber-50 text-amber-700 ring-1 ring-amber-100">
-                            Topping:
-                            <span class="ml-2 text-lg font-bold text-amber-600">Coklat Keju</span>
-                        </span>
-                        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-amber-50 text-amber-700 ring-1 ring-amber-100">
-                            <span class="ml-2 text-lg font-bold text-amber-600">Rp 85.000</span>
-                        </span>
-                    </div>
-
-                    <p class="text-gray-600 mb-4">
-                    Strudel lembut dengan isian brownies cokelat rich, berpadu topping coklat keju yang spesial dan menggoda.
-                    </p>
-
-                    <button
-                    onclick="orderStrudel5()"
-                    class="w-full bg-amber-600 hover:bg-amber-500 text-white py-3 rounded-full font-semibold transition-all">
-                    Pesan via WhatsApp
-                    </button>
-                </div>
-
-                    <script>
-                        function orderStrudel5() {
-                        const productName = 'Strudel Browcok Coklat Keju SPESIAL';
-                        const price = 85000;
-                        const message = `Halo! Saya ingin pesan ${productName} seharga Rp ${price.toLocaleString('id-ID')}.`;
-                        const phoneNumber = '6283173901708'; // ganti dengan nomor WhatsApp kamu
-                        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-                        window.open(url, '_blank');
-                        }
-                    </script>
-                </div>
-
-                <!-- Product 6 -->
-                <div class="product-card bg-white rounded-2xl shadow-lg overflow-hidden fade-in">
-                <img 
-                    src="assets/images/mk-8.jpeg" 
-                    alt=" Strudel Browcok Chocochips - Muhajir’s Kitchen" 
-                    class="w-full h-60 object-cover"
-                >
-                <div class="p-6">
                     <!-- Judul -->
                     <h3 class="text-xl font-bold text-amber-800 mb-3">
-                     Strudel Browcok Chocochips
+                    Bolu Ketan Hitam Keju Lumer
                     </h3>
 
                     <!-- Detail Produk -->
                     <div class="mb-4 space-y-2">
                     <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-amber-50 text-amber-700 ring-1 ring-amber-100">
                         Topping:
-                        <span class="ml-2 text-lg font-bold text-amber-600">Chocochips</span>
+                        <span class="ml-2 text-lg font-bold text-amber-600">Keju Lumer</span>
                     </span>
                     <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-amber-50 text-amber-700 ring-1 ring-amber-100">
-                        <span class="ml-2 text-lg font-bold text-amber-600">Rp 75.000</span>
+                        <span class="ml-2 text-lg font-bold text-amber-600">Rp 85.000</span>
                     </span>
                     </div>
 
                     <!-- Deskripsi -->
                     <p class="text-gray-600 mb-4">
-                    Strudel lembut dengan isian brownies cokelat rich, berpadu topping chocochips yang memanjakan lidah.
+                    Bolu Ketan Hitam lembut dengan keju lumer yang gurih dan topping coklat spesial. Pas untuk cemilan manis yang memanjakan lidah.
                     </p>
 
                     <!-- Tombol Pesan -->
                     <button
-                    onclick="orderStrudel6()"
+                    onclick="orderBoluKetanHitam()"
                     class="w-full bg-amber-600 hover:bg-amber-500 text-white py-3 rounded-full font-semibold transition-all">
                     Pesan via WhatsApp
                     </button>
                 </div>
+
                 <script>
-                    function orderStrudel6() {
-                    const productName = 'Strudel Browcok Chocochips';
-                    const price = 75000;
+                    function orderBoluKetanHitam() {
+                    const productName = 'Bolu Ketan Hita Keju Lumer';
+                    const price = 85000;
                     const message = `Halo! Saya ingin pesan ${productName} seharga Rp ${price.toLocaleString('id-ID')}.`;
-                    const phoneNumber = '6283173901708'; // ganti dengan nomor WhatsApp kamu
+                    const phoneNumber = '6287781792762'; // ganti dengan nomor WhatsApp kamu
+                    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+                    window.open(url, '_blank');
+                    }
+                </script>
+                </div>
+       
+                <!-- Product 6 -->
+                <div class="product-card bg-white rounded-2xl shadow-lg overflow-hidden fade-in relative">
+                <!-- Gambar -->
+                <div class="relative">
+                    <img 
+                    src="assets/images/oh-7.jpeg" 
+                    alt="Brownies Cookie Dough" 
+                    class="w-full h-72 object-cover"
+                    >
+                </div>
+
+                <!-- Konten -->
+                <div class="p-6">
+                    <!-- Judul -->
+                    <h3 class="text-xl font-bold text-amber-800 mb-3">
+                    Brownies Cookie Dough
+                    </h3>
+
+                    <!-- Detail Produk -->
+                    <div class="mb-4 space-y-2">
+                    <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-amber-50 text-amber-700 ring-1 ring-amber-100">
+                        Ukuran:
+                        <span class="ml-2 text-lg font-bold text-amber-600">22x10 cm</span>
+                    </span>
+                    <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-amber-50 text-amber-700 ring-1 ring-amber-100">
+                        <span class="ml-2 text-lg font-bold text-amber-600">Rp 90.000</span>
+                    </span>
+                    </div>
+
+                    <!-- Deskripsi -->
+                    <p class="text-gray-600 mb-4">
+                    Brownies lembut dengan isian cookie dough dan topping coklat keju yang gurih. Manisnya pas dan teksturnya meleleh di mulut, cocok untuk cemilan spesial.
+                    </p>
+
+                    <!-- Tombol Pesan -->
+                    <button
+                    onclick="orderBrowniesCookieDough()"
+                    class="w-full bg-amber-600 hover:bg-amber-500 text-white py-3 rounded-full font-semibold transition-all">
+                    Pesan via WhatsApp
+                    </button>
+                </div>
+
+                <script>
+                    function orderBrowniesCookieDough() {
+                    const productName = 'Brownies Cookie Dough';
+                    const price = 90000;
+                    const message = `Halo! Saya ingin pesan ${productName} seharga Rp ${price.toLocaleString('id-ID')}.`;
+                    const phoneNumber = '6287781792762'; // ganti dengan nomor WhatsApp kamu
                     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
                     window.open(url, '_blank');
                     }
@@ -760,698 +792,279 @@
                 </div>
 
                 <!-- Product 7 -->
-                <div class="product-card bg-white rounded-2xl shadow-lg overflow-hidden fade-in relative">
-                <!-- Gambar dengan label di pojok kanan atas -->
-                <div class="relative">
-                    <img 
-                    src="assets/images/mk-10.jpeg" 
-                    alt="Strudel Browcok Pisang Coklat Keju SPESIAL - Muhajir’s Kitchen" 
-                    class="w-full h-60 object-cover"
-                    >
-                    <!-- Label Spesial -->
-                    <span class="absolute top-3 right-3 bg-amber-600 text-white text-sm font-semibold px-3 py-1 rounded-full shadow-md">
-                    🌟 Spesial
-                    </span>
-                </div>
-
-                <!-- Konten -->
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-amber-800 mb-3">
-                    Strudel Piscokju (Pisang Coklat Keju) SPESIAL
-                    </h3>
-
-                    <div class="mb-4 space-y-2">
-                        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-amber-50 text-amber-700 ring-1 ring-amber-100">
-                            Topping:
-                            <span class="ml-2 text-lg font-bold text-amber-600">Pisang Coklat Keju</span>
-                        </span>
-                        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-amber-50 text-amber-700 ring-1 ring-amber-100">
-                            <span class="ml-2 text-lg font-bold text-amber-600">Rp 80.000</span>
-                        </span>
-                    </div>
-
-                    <p class="text-gray-600 mb-4">
-                    Strudel lembut dengan isian brownies cokelat rich, berpadu topping pisang coklat keju yang spesial dan menggoda.
-                    </p>
-
-                    <button
-                    onclick="orderStrudel7()"
-                    class="w-full bg-amber-600 hover:bg-amber-500 text-white py-3 rounded-full font-semibold transition-all">
-                    Pesan via WhatsApp
-                    </button>
-                </div>
-
-                    <script>
-                        function orderStrudel7() {
-                        const productName = 'Strudel Pisang Coklat Keju SPESIAL';
-                        const price = 80000;
-                        const message = `Halo! Saya ingin pesan ${productName} seharga Rp ${price.toLocaleString('id-ID')}.`;
-                        const phoneNumber = '6283173901708'; // ganti dengan nomor WhatsApp kamu
-                        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-                        window.open(url, '_blank');
-                        }
-                    </script>
-                </div>
-
-                <!-- Product 8 -->
                 <div class="product-card bg-white rounded-2xl shadow-lg overflow-hidden fade-in">
                 <img 
-                    src="assets/images/mk-11.jpeg" 
-                    alt=" Bolen Mix 4 Varian - Muhajir’s Kitchen" 
-                    class="w-full h-60 object-cover"
+                    src="assets/images/oh-5.jpeg" 
+                    alt="Savory Croissants" 
+                    class="w-full h-72 object-cover"
                 >
                 <div class="p-6">
-                <!-- Judul -->
-                <h3 class="text-2xl font-bold text-amber-800 mb-4 tracking-wide">
-                    Bolen Mix 4 Varian
-                </h3>
-
-                <!-- Detail Produk -->
-                <div class="space-y-3 mb-5">
+                    <!-- Judul -->
+                    <h3 class="text-2xl font-bold text-amber-800 mb-4 tracking-wide">
+                    Savory Croissants
+                    </h3>
+                    
                     <!-- Topping -->
-                    <div class="flex flex-wrap items-center gap-2">
-                    <span class="px-3 py-1 text-sm font-semibold bg-amber-100 text-amber-800 rounded-full ring-1 ring-amber-200">
-                        Duren Keju
-                    </span>
-                    <span class="px-3 py-1 text-sm font-semibold bg-amber-100 text-amber-800 rounded-full ring-1 ring-amber-200">
-                        Selai Nanas
-                    </span>
-                    <span class="px-3 py-1 text-sm font-semibold bg-amber-100 text-amber-800 rounded-full ring-1 ring-amber-200">
-                        Browcok
-                    </span>
-                    <span class="px-3 py-1 text-sm font-semibold bg-amber-100 text-amber-800 rounded-full ring-1 ring-amber-200">
-                        Piscokju
-                    </span>
+                    <div class="flex flex-wrap items-center gap-2 mb-4">
+                    <span class="px-3 py-1 text-sm font-semibold bg-amber-100 text-amber-800 rounded-full ring-1 ring-amber-200">Beef Mozza</span>
+                    <span class="px-3 py-1 text-sm font-semibold bg-amber-100 text-amber-800 rounded-full ring-1 ring-amber-200">Garlic Cheese</span>
                     </div>
 
-                    <!-- Harga -->
-                    <div>
-                    <span class="inline-flex items-center px-4 py-1 rounded-full text-sm font-semibold bg-amber-50 text-amber-700 ring-1 ring-amber-100">
-                    <span class="text-lg font-bold text-amber-600">Rp 90.000</span>
-                    </span>
-                    </div>
-                </div>
-
-                <!-- Deskripsi -->
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    Perpaduan empat varian rasa favorit dalam satu box — Duren Keju, Selai Nanas, Browcok, dan Piscokju.  
-                    Tekstur lembut, aroma menggoda, dan cita rasa premium yang pas untuk hadiah atau camilan istimewa.
-                </p>
-
-                    <!-- Tombol Pesan -->
-                    <button
-                    onclick="orderBolen()"
-                    class="w-full bg-amber-600 hover:bg-amber-500 text-white py-3 rounded-full font-semibold transition-all">
-                    Pesan via WhatsApp
-                    </button>
-                </div>
-                <script>
-                    function orderBolen() {
-                    const productName = 'Bolen Mix 4 Varian';
-                    const price = 90000;
-                    const message = `Halo! Saya ingin pesan ${productName} seharga Rp ${price.toLocaleString('id-ID')}.`;
-                    const phoneNumber = '6283173901708'; // ganti dengan nomor WhatsApp kamu
-                    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-                    window.open(url, '_blank');
-                    }
-                </script>
-                </div>
-
-                 <!-- Product 9 -->
-                <div class="product-card bg-white rounded-2xl shadow-lg overflow-hidden fade-in">
-                <img 
-                    src="assets/images/mk-13.jpeg" 
-                    alt="Bolen Pisang Coklat Keju - Muhajir’s Kitchen" 
-                    class="w-full h-60 object-cover"
-                >
-                <div class="p-6">
-                    <!-- Judul -->
-                    <h3 class="text-xl font-bold text-amber-800 mb-3">
-                     Bolen Pisang Coklat Keju
-                    </h3>
-
-                    <!-- Detail Produk -->
-                    <div class="mb-4 space-y-2">
-                    <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-amber-50 text-amber-700 ring-1 ring-amber-100">
-                        Isi: <span class="ml-2 text-lg font-bold text-amber-600">10 pcs</span>
-                    </span>
-                    <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-amber-50 text-amber-700 ring-1 ring-amber-100">
-                    <span class="text-lg font-bold text-amber-600">Rp 65.000</span>
-                    </span>
-                    </div>
+                    <!-- Pilihan Jumlah -->
+                    <label class="block mb-2 font-semibold text-gray-700">Pilihan:</label>
+                    <select id="croissantQty" class="w-full mb-4 px-4 py-2 border rounded-lg text-gray-800">
+                    <option value="">-- Pilih jumlah --</option>
+                    <option value="15000|1 PCS">1 PCS - Rp 15.000</option>
+                    <option value="55000|4 PCS">4 PCS - Rp 55.000</option>
+                    </select>
 
                     <!-- Deskripsi -->
-                    <p class="text-gray-600 mb-4">
-                    Bolen lembut dengan isian pisang coklat dan keju yang memanjakan lidah.
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                    Perpaduan varian Beef Mozza dan Garlic Cheese yang lembut dan gurih. Tekstur renyah di luar, lembut di dalam, pas untuk camilan atau hadiah istimewa.
                     </p>
 
                     <!-- Tombol Pesan -->
                     <button
-                    onclick="orderBolen1()"
+                    onclick="orderCroissant()"
                     class="w-full bg-amber-600 hover:bg-amber-500 text-white py-3 rounded-full font-semibold transition-all">
                     Pesan via WhatsApp
                     </button>
                 </div>
-                <script>
-                    function orderBolen1() {
-                    const productName = 'Bolen Pisang Coklat Keju';
-                    const price = 65000;
-                    const message = `Halo! Saya ingin pesan ${productName} isi 10 pcs, seharga Rp ${price.toLocaleString('id-ID')}.`;
-                    const phoneNumber = '6283173901708'; // ganti dengan nomor WhatsApp kamu
-                    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-                    window.open(url, '_blank');
-                    }
-                </script>
                 </div>
 
-                <!-- Product 10 -->
-                <div class="product-card bg-white rounded-2xl shadow-lg overflow-hidden fade-in">
-                <img 
-                    src="assets/images/mk-17.jpeg" 
-                    alt="Bolen Durian Keju - Muhajir’s Kitchen" 
-                    class="w-full h-60 object-cover"
-                >
-                <div class="p-6">
-                    <!-- Judul -->
-                    <h3 class="text-xl font-bold text-amber-800 mb-3">
-                     Bolen Durian Keju
-                    </h3>
-
-                    <!-- Detail Produk -->
-                    <div class="mb-4 space-y-2">
-                    <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-amber-50 text-amber-700 ring-1 ring-amber-100">
-                        Isi: <span class="ml-2 text-lg font-bold text-amber-600">6 pcs</span>
-                    </span>
-                    <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-amber-50 text-amber-700 ring-1 ring-amber-100">
-                    <span class="text-lg font-bold text-amber-600">Rp 55.000</span>
-                    </span>
-                    </div>
-
-                    <!-- Deskripsi -->
-                    <p class="text-gray-600 mb-4">
-                    Bolen lembut dengan isian durian dan keju yang memanjakan lidah.
-                    </p>
-
-                    <!-- Tombol Pesan -->
-                    <button
-                    onclick="orderBolen2()"
-                    class="w-full bg-amber-600 hover:bg-amber-500 text-white py-3 rounded-full font-semibold transition-all">
-                    Pesan via WhatsApp
-                    </button>
-                </div>
-                <script>
-                    function orderBolen2() {
-                    const productName = 'Bolen Durian Keju';
-                    const price = 55000;
-                    const message = `Halo! Saya ingin pesan ${productName} isi 6 pcs, seharga Rp ${price.toLocaleString('id-ID')}.`;
-                    const phoneNumber = '6283173901708'; // ganti dengan nomor WhatsApp kamu
-                    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-                    window.open(url, '_blank');
-                    }
-                </script>
-                </div>
-
-                <!-- Product 11 -->
-                <div class="product-card bg-white rounded-2xl shadow-lg overflow-hidden fade-in">
-                <img 
-                    src="assets/images/mk-15.jpeg" 
-                    alt="Bolen Durian Keju - Muhajir’s Kitchen" 
-                    class="w-full h-60 object-cover"
-                >
-                <div class="p-6">
-                    <!-- Judul -->
-                    <h3 class="text-xl font-bold text-amber-800 mb-3">
-                        Bolen Nanas
-                    </h3>
-
-                    <!-- Detail Produk -->
-                    <div class="mb-4 flex flex-wrap gap-2">
-                        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-amber-50 text-amber-700 ring-1 ring-amber-100">
-                            Isi: <span class="ml-2 text-lg font-bold text-amber-600">10 pcs</span>
-                        </span>
-                        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-amber-50 text-amber-700 ring-1 ring-amber-100">
-                        <span class="text-lg font-bold text-amber-600">Rp 70.000</span>
-                        </span>
-
-                        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-amber-50 text-amber-700 ring-1 ring-amber-100">
-                            Isi: <span class="ml-2 text-lg font-bold text-amber-600">12 pcs</span>
-                        </span>
-                        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-amber-50 text-amber-700 ring-1 ring-amber-100">
-                        <span class="text-lg font-bold text-amber-600">Rp 80.000</span>
-                        </span>
-                    </div>
-
-                    <!-- Deskripsi -->
-                    <p class="text-gray-600 mb-4">
-                        Bolen lembut dengan isian selai nanas asli yang memanjakan lidah.
-                    </p>
-
-                    <!-- Tombol Pesan -->
-                    <div class="grid grid-cols-2 gap-2">
-                        <button
-                            onclick="orderBolen3('10 pcs', 70000)"
-                            class="w-full bg-amber-600 hover:bg-amber-500 text-white py-3 rounded-full font-semibold transition-all">
-                            Pesan 10 pcs
-                        </button>
-                        <button
-                            onclick="orderBolen3('12 pcs', 80000)"
-                            class="w-full bg-amber-600 hover:bg-amber-500 text-white py-3 rounded-full font-semibold transition-all">
-                            Pesan 12 pcs
-                        </button>
-                    </div>
+                <!-- Toast Notification -->
+                <div id="toast" class="fixed bottom-5 left-1/2 -translate-x-1/2 bg-red-500 text-white px-6 py-3 rounded-lg shadow-lg opacity-0 transition-opacity">
+                Silakan pilih jumlah dulu!
                 </div>
 
                 <script>
-                function orderBolen3(isi, harga) {
-                    const productName = 'Bolen Nanas';
-                    const message = `Halo! Saya ingin pesan ${productName} isi ${isi}, seharga Rp ${harga.toLocaleString('id-ID')}.`;
-                    const phoneNumber = '6283173901708'; // ganti dengan nomor WhatsApp kamu
-                    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-                    window.open(url, '_blank');
+                function orderCroissant() {
+                const select = document.getElementById('croissantQty');
+                const value = select.value;
+
+                if (!value) {
+                    // Tampilkan toast jika belum memilih
+                    const toast = document.getElementById('toast');
+                    toast.classList.add('opacity-100');
+                    setTimeout(() => toast.classList.remove('opacity-100'), 2500);
+                    return;
+                }
+
+                const [price, qty] = value.split('|');
+                const productName = `Savory Croissants (${qty})`;
+                const message = `Halo! Saya ingin pesan ${productName} seharga Rp ${parseInt(price).toLocaleString('id-ID')}.`;
+                const phoneNumber = '6287781792762'; // ganti dengan nomor WhatsApp kamu
+                const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+                window.open(url, '_blank');
                 }
                 </script>
-                </div>
-
-                <!-- Product 12 -->
-                <div class="product-card bg-white rounded-2xl shadow-lg overflow-hidden fade-in">
-                <img 
-                    src="assets/images/mk-16.jpeg" 
-                    alt="Bolen Brownies Coklat - Muhajir’s Kitchen" 
-                    class="w-full h-60 object-cover"
-                >
-                <div class="p-6">
-                    <!-- Judul -->
-                    <h3 class="text-xl font-bold text-amber-800 mb-3">
-                     Bolen Brownies Coklat
-                    </h3>
-
-                    <!-- Detail Produk -->
-                    <div class="mb-4 space-y-2">
-                    <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-amber-50 text-amber-700 ring-1 ring-amber-100">
-                        Isi: <span class="ml-2 text-lg font-bold text-amber-600">6 pcs</span>
-                    </span>
-                    <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-amber-50 text-amber-700 ring-1 ring-amber-100">
-                    <span class="text-lg font-bold text-amber-600">Rp 40.000</span>
-                    </span>
-                    </div>
-
-                    <!-- Deskripsi -->
-                    <p class="text-gray-600 mb-4">
-                    Bolen lembut dengan isian brownies coklat yang memanjakan lidah.
-                    </p>
-
-                    <!-- Tombol Pesan -->
-                    <button
-                    onclick="orderBolen4()"
-                    class="w-full bg-amber-600 hover:bg-amber-500 text-white py-3 rounded-full font-semibold transition-all">
-                    Pesan via WhatsApp
-                    </button>
-                </div>
-                <script>
-                    function orderBolen4() {
-                    const productName = 'Bolen Brownies Coklat';
-                    const price = 40000;
-                    const message = `Halo! Saya ingin pesan ${productName} isi 6 pcs, seharga Rp ${price.toLocaleString('id-ID')}.`;
-                    const phoneNumber = '6283173901708'; // ganti dengan nomor WhatsApp kamu
-                    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-                    window.open(url, '_blank');
-                    }
-                </script>
-                </div>
             </div>
         </div>
     </section>
     
     <!-- Services Section -->
-    <section id="services" class="py-20 px-4 bg-gradient-to-r from-amber-50 to-orange-50">
-    <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-16 fade-in">
-        <h2 class="text-3xl md:text-4xl font-bold text-amber-800 mb-4">Layanan Kami</h2>
-        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-            Kami berkomitmen menghadirkan Strudel & Bolen terbaik dengan pelayanan yang amanah dan berkualitas
-        </p>
-
-        <!-- Badge Halal MUI & Catatan Penting -->
-        <div class="mt-6 flex flex-col items-center space-y-3">
-                <!-- Halal MUI -->
-                <div class="inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold bg-green-50 text-green-700 ring-1 ring-green-200 shadow-sm">
-                    <i class="fas fa-check-circle mr-2 text-green-600"></i>
-                    Sudah <span class="ml-1 font-bold text-green-700">Bersertifikat Halal MUI</span>
+    <!-- <section id="services" class="py-20 px-4 bg-gradient-to-r from-amber-50 to-orange-50">
+        <div class="max-w-7xl mx-auto text-center fade-in">
+            <h2 class="text-3xl md:text-4xl font-bold text-amber-800 mb-4">Layanan Kami</h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-6">
+            Menyajikan Donat Labu, Brownies & Savory Croissants dengan kualitas premium, halal, dan amanah.
+            </p> -->
+<!-- 
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"> -->
+            <!-- Pengiriman Cepat -->
+            <!-- <div class="service-card bg-white rounded-2xl p-8 text-center shadow-lg fade-in">
+                <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fas fa-shipping-fast text-2xl text-amber-500"></i>
                 </div>
+                <h3 class="text-xl font-bold text-amber-800 mb-2">Pengiriman Cepat</h3>
+                <p class="text-gray-600 text-sm">Diantar maksimal 2 jam setelah siap (Palembang & sekitarnya)</p>
+            </div> -->
 
-                <!-- Catatan Tidak Menerima Order Ultah -->
-                <div class="inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold bg-red-50 text-red-700 ring-1 ring-red-200 shadow-sm max-w-2xl text-center">
-                    <span class="ml-1 font-bold">⚠️ Tidak untuk pesanan ulang tahun</span>
+            <!-- Fresh Setiap Hari -->
+            <!-- <div class="service-card bg-white rounded-2xl p-8 text-center shadow-lg fade-in">
+                <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fas fa-bread-slice text-2xl text-amber-500"></i>
+                </div>
+                <h3 class="text-xl font-bold text-amber-800 mb-2">Fresh Setiap Hari</h3>
+                <p class="text-gray-600 text-sm">Semua produk dibuat setiap hari dari bahan segar & halal</p>
+            </div> -->
+
+            <!-- Custom Pesanan -->
+            <!-- <div class="service-card bg-white rounded-2xl p-8 text-center shadow-lg fade-in">
+                <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fas fa-gift text-2xl text-amber-500"></i>
+                </div>
+                <h3 class="text-xl font-bold text-amber-800 mb-2">Custom Pesanan</h3>
+                <p class="text-gray-600 text-sm">Request topping, rasa, atau kemasan untuk acara spesial</p>
+            </div> -->
+
+            <!-- Pelayanan Ramah -->
+            <!-- <div class="service-card bg-white rounded-2xl p-8 text-center shadow-lg fade-in">
+                <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fas fa-hand-holding-heart text-2xl text-amber-500"></i>
+                </div>
+                <h3 class="text-xl font-bold text-amber-800 mb-2">Pelayanan Ramah</h3>
+                <p class="text-gray-600 text-sm">Layanan cepat, hangat, dan sepenuh hati untuk setiap pelanggan</p>
+            </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- FAQ Section -->
+    <!-- <section id="faq" class="py-20 px-4 bg-amber-50">
+        <div class="max-w-3xl mx-auto text-center fade-in">
+            <h2 class="text-3xl md:text-4xl font-bold text-amber-800 mb-4">FAQ</h2>
+            <p class="text-gray-600 mb-12">Pertanyaan umum seputar produk & layanan kami</p>
+
+            <div class="space-y-3">
+            <div class="accordion-item bg-white rounded-2xl shadow-lg overflow-hidden">
+                <button class="accordion-header w-full px-6 py-4 flex justify-between items-center text-left">
+                <span class="font-semibold text-amber-800">Bisa pesan custom topping?</span>
+                <i class="fas fa-chevron-down text-amber-500 transition-transform duration-300"></i>
+                </button>
+                <div class="accordion-content px-6 max-h-0 overflow-hidden transition-all duration-500">
+                <p class="text-gray-600 py-2">Bisa! Pilih topping favorit: coklat, keju, strawberry, blueberry, atau kombinasi sesuai selera.</p>
                 </div>
             </div>
-        </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <!-- Pengiriman Cepat -->
-        <div class="service-card bg-white rounded-2xl p-8 text-center shadow-lg fade-in">
-            <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <i class="fas fa-shipping-fast text-2xl text-amber-500"></i>
+            <div class="accordion-item bg-white rounded-2xl shadow-lg overflow-hidden">
+                <button class="accordion-header w-full px-6 py-4 flex justify-between items-center text-left">
+                <span class="font-semibold text-amber-800">Minimal order berapa?</span>
+                <i class="fas fa-chevron-down text-amber-500 transition-transform duration-300"></i>
+                </button>
+                <div class="accordion-content px-6 max-h-0 overflow-hidden transition-all duration-500">
+                <p class="text-gray-600 py-2">Mulai dari 1 pcs. Untuk pesanan banyak, tersedia harga spesial.</p>
+                </div>
             </div>
-            <h3 class="text-xl font-bold text-amber-800 mb-3">Pengiriman Cepat</h3>
-            <p class="text-gray-600">Pesanan diantar maksimal 2 jam setelah siap (area Palembang dan sekitarnya)</p>
-        </div>
 
-        <!-- Fresh Setiap Hari -->
-        <div class="service-card bg-white rounded-2xl p-8 text-center shadow-lg fade-in">
-            <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <i class="fas fa-bread-slice text-2xl text-amber-500"></i>
+            <div class="accordion-item bg-white rounded-2xl shadow-lg overflow-hidden">
+                <button class="accordion-header w-full px-6 py-4 flex justify-between items-center text-left">
+                <span class="font-semibold text-amber-800">Ada layanan antar?</span>
+                <i class="fas fa-chevron-down text-amber-500 transition-transform duration-300"></i>
+                </button>
+                <div class="accordion-content px-6 max-h-0 overflow-hidden transition-all duration-500">
+                <p class="text-gray-600 py-2">Belum antar langsung, tapi bisa dikirim via ojol. Pesanan tetap aman sampai tujuan.</p>
+                </div>
             </div>
-            <h3 class="text-xl font-bold text-amber-800 mb-3">Fresh Setiap Hari</h3>
-            <p class="text-gray-600">Semua Strudel & Bolen dibuat setiap hari dari bahan segar dan halal</p>
-        </div>
 
-        <!-- Custom Pesanan -->
-        <div class="service-card bg-white rounded-2xl p-8 text-center shadow-lg fade-in">
-            <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <i class="fas fa-gift text-2xl text-amber-500"></i>
+            <div class="accordion-item bg-white rounded-2xl shadow-lg overflow-hidden">
+                <button class="accordion-header w-full px-6 py-4 flex justify-between items-center text-left">
+                <span class="font-semibold text-amber-800">Cara penyimpanan?</span>
+                <i class="fas fa-chevron-down text-amber-500 transition-transform duration-300"></i>
+                </button>
+                <div class="accordion-content px-6 max-h-0 overflow-hidden transition-all duration-500">
+                <p class="text-gray-600 py-2">Simpan di kulkas (chiller), gunakan wadah tertutup agar tetap lembut dan segar.</p>
+                </div>
             </div>
-            <h3 class="text-xl font-bold text-amber-800 mb-3">Custom Pesanan</h3>
-            <p class="text-gray-600">Bisa request topping, rasa, atau kemasan khusus untuk acara spesial</p>
-        </div>
 
-        <!-- Pelayanan Ramah -->
-        <div class="service-card bg-white rounded-2xl p-8 text-center shadow-lg fade-in">
-            <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <i class="fas fa-hand-holding-heart text-2xl text-amber-500"></i>
+            <div class="accordion-item bg-white rounded-2xl shadow-lg overflow-hidden">
+                <button class="accordion-header w-full px-6 py-4 flex justify-between items-center text-left">
+                <span class="font-semibold text-amber-800">Cara pembayaran?</span>
+                <i class="fas fa-chevron-down text-amber-500 transition-transform duration-300"></i>
+                </button>
+                <div class="accordion-content px-6 max-h-0 overflow-hidden transition-all duration-500">
+                <p class="text-gray-600 py-2">Transfer bank, e-wallet (OVO, DANA, GoPay), atau COD (area tertentu).</p>
+                </div>
             </div>
-            <h3 class="text-xl font-bold text-amber-800 mb-3">Pelayanan Ramah</h3>
-            <p class="text-gray-600">Kami melayani dengan sepenuh hati, cepat, dan penuh kehangatan</p>
+            </div>
         </div>
+    </section> -->
+
+    <!-- JS Accordion -->
+    <!-- <script>
+    document.querySelectorAll('.accordion-header').forEach(header => {
+        header.addEventListener('click', () => {
+            const item = header.parentElement;
+            const content = item.querySelector('.accordion-content');
+            const icon = header.querySelector('i');
+
+            if (item.classList.contains('active')) {
+            content.style.maxHeight = null;
+            icon.style.transform = 'rotate(0deg)';
+            item.classList.remove('active');
+            } else {
+            document.querySelectorAll('.accordion-item').forEach(i => {
+                i.classList.remove('active');
+                i.querySelector('.accordion-content').style.maxHeight = null;
+                i.querySelector('i').style.transform = 'rotate(0deg)';
+            });
+            item.classList.add('active');
+            content.style.maxHeight = content.scrollHeight + 'px';
+            icon.style.transform = 'rotate(180deg)';
+            }
+        });
+    }); -->
+    <!-- </script> -->
+
+    <!-- ShopeeFood Section -->
+    <section id="shopeefood" class="py-20 -mt-24 px-4 bg-gradient-to-r from-amber-50 to-orange-50">
+        <div class="max-w-4xl mx-auto text-center fade-in">
+            <h2 class="text-3xl md:text-4xl font-bold text-amber-800 mb-4">Terhubung dengan ShopeeFood</h2>
+            <p class="text-lg text-gray-600 mb-8">Pesan Donat Labu, Brownies & Savory Croissants favorit Anda dengan cepat melalui ShopeeFood — aman, mudah, praktis!</p>
+            <a href="https://shopee.co.id/ohmybrownite" target="_blank" rel="noopener noreferrer"
+            class="inline-flex items-center bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-full font-semibold text-lg transition-all transform hover:scale-105">
+            <img src="assets/images/shoope-food.png" alt="ShopeeFood Logo" class="w-12 h-12 mr-3">
+            Pesan Sekarang
+            </a>
         </div>
-    </div>
     </section>
 
-<!-- FAQ Section -->
-<section id="faq" class="py-20 px-4 bg-amber-50">
-  <div class="max-w-4xl mx-auto">
-    <!-- Header -->
-    <div class="text-center mb-16 fade-in">
-      <h2 class="text-3xl md:text-4xl font-bold text-amber-800 mb-4">FAQ</h2>
-      <p class="text-lg text-gray-600">Beberapa pertanyaan umum seputar produk kami</p>
-    </div>
-
-    <!-- Accordion -->
-    <div class="space-y-4">
-      <!-- Item 1 -->
-      <div class="accordion-item bg-white rounded-2xl shadow-lg overflow-hidden fade-in">
-        <button class="accordion-header w-full px-6 py-4 flex justify-between items-center text-left">
-          <span class="text-lg font-semibold text-amber-800">Apakah bisa pesan custom topping?</span>
-          <i class="fas fa-chevron-down text-amber-500 transition-transform duration-300"></i>
-        </button>
-        <div class="accordion-content px-6 max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-          <p class="text-gray-600 py-4">
-            Bisa! Pilih topping favorit seperti coklat, keju, strawberry, blueberry, atau kombinasi sesuai selera.
-          </p>
-        </div>
-      </div>
-
-      <!-- Item 2 -->
-      <div class="accordion-item bg-white rounded-2xl shadow-lg overflow-hidden fade-in">
-        <button class="accordion-header w-full px-6 py-4 flex justify-between items-center text-left">
-          <span class="text-lg font-semibold text-amber-800">Berapa minimal order?</span>
-          <i class="fas fa-chevron-down text-amber-500 transition-transform duration-300"></i>
-        </button>
-        <div class="accordion-content px-6 max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-          <p class="text-gray-600 py-4">
-            Tidak ada minimal order — bisa mulai dari 1 pcs.  
-            Untuk pesanan besar, tersedia harga spesial.
-          </p>
-        </div>
-      </div>
-
-      <!-- Item 3 -->
-      <div class="accordion-item bg-white rounded-2xl shadow-lg overflow-hidden fade-in">
-        <button class="accordion-header w-full px-6 py-4 flex justify-between items-center text-left">
-          <span class="text-lg font-semibold text-amber-800">Apakah tersedia layanan antar?</span>
-          <i class="fas fa-chevron-down text-amber-500 transition-transform duration-300"></i>
-        </button>
-        <div class="accordion-content px-6 max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-          <p class="text-gray-600 py-4">
-            Saat ini kami belum antar langsung, tapi bisa dikirim via ojol.  
-            Kami bantu siapkan pesanan agar aman sampai tujuan.
-          </p>
-        </div>
-      </div>
-
-      <!-- Item 4 -->
-      <div class="accordion-item bg-white rounded-2xl shadow-lg overflow-hidden fade-in">
-        <button class="accordion-header w-full px-6 py-4 flex justify-between items-center text-left">
-          <span class="text-lg font-semibold text-amber-800">Bagaimana cara menyimpannya?</span>
-          <i class="fas fa-chevron-down text-amber-500 transition-transform duration-300"></i>
-        </button>
-        <div class="accordion-content px-6 max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-          <p class="text-gray-600 py-4">
-            Simpan di kulkas (chiller), bukan freezer. Gunakan wadah tertutup rapat agar tekstur dan rasa tetap lembut.
-          </p>
-        </div>
-      </div>
-
-      <!-- Item 5 -->
-      <div class="accordion-item bg-white rounded-2xl shadow-lg overflow-hidden fade-in">
-        <button class="accordion-header w-full px-6 py-4 flex justify-between items-center text-left">
-          <span class="text-lg font-semibold text-amber-800">Bagaimana cara pembayaran?</span>
-          <i class="fas fa-chevron-down text-amber-500 transition-transform duration-300"></i>
-        </button>
-        <div class="accordion-content px-6 max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-          <p class="text-gray-600 py-4">
-            Pembayaran bisa melalui transfer bank, e-wallet (OVO, DANA, GoPay), atau COD (area tertentu).
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- JS Accordion -->
-<script>
-document.querySelectorAll('.accordion-header').forEach(header => {
-  header.addEventListener('click', () => {
-    const item = header.parentElement;
-    const content = item.querySelector('.accordion-content');
-    const icon = header.querySelector('i');
-
-    if (item.classList.contains('active')) {
-      content.style.maxHeight = null;
-      icon.style.transform = 'rotate(0deg)';
-      item.classList.remove('active');
-    } else {
-      document.querySelectorAll('.accordion-item').forEach(i => {
-        i.classList.remove('active');
-        i.querySelector('.accordion-content').style.maxHeight = null;
-        i.querySelector('i').style.transform = 'rotate(0deg)';
-      });
-      item.classList.add('active');
-      content.style.maxHeight = content.scrollHeight + 'px';
-      icon.style.transform = 'rotate(180deg)';
-    }
-  });
-});
-</script>
-
-<section id="shopeefood" class="py-20 px-4 bg-gradient-to-r from-amber-50 to-orange-50">
-  <div class="max-w-4xl mx-auto text-center fade-in">
-    <!-- Header -->
-    <h2 class="text-3xl md:text-4xl font-bold text-amber-800 mb-4">
-      Terhubung dengan ShopeeFood
-    </h2>
-    <p class="text-lg text-gray-600 mb-8">
-      Pesan Strudel & Bolen favorit Anda dengan cepat melalui ShopeeFood — aman, mudah, dan praktis!
-    </p>
-
-    <!-- Button ShopeeFood -->
-    <a href="https://shopee.co.id/ummuzubair288" target="_blank" rel="noopener noreferrer"
-       class="inline-flex items-center bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-full font-semibold text-lg transition-all transform hover:scale-105">
-      <img src="assets/images/shoope-food.png" alt="ShopeeFood Logo" class="w-12 h-12 mr-3">
-      Pesan Sekarang
-    </a>
-  </div>
-</section>
-
-
-    <!-- Order Form Section -->
-    <section id="order" class="py-20 px-4 bg-gradient-to-r from-orange-50 to-amber-50">
-  <div class="max-w-4xl mx-auto">
-    <!-- Header -->
-    <div class="text-center mb-16 fade-in">
-      <h2 class="text-3xl md:text-4xl font-bold text-amber-800 mb-4">Form Pemesanan</h2>
-      <p class="text-lg text-gray-600">Isi form di bawah ini untuk memesan Strudel atau Bolen favoritmu 🍮</p>
-    </div>
-
-    <!-- Form -->
-    <div class="bg-white rounded-2xl shadow-xl p-8 fade-in">
-      <form id="orderForm" class="space-y-6">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div>
-            <label for="nama" class="block text-sm font-semibold text-amber-800 mb-2">Nama Lengkap</label>
-            <input type="text" id="nama" name="nama" required
-                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent transition-all"
-                   placeholder="Masukkan nama lengkap">
-          </div>
-
-          <div>
-            <label for="whatsapp" class="block text-sm font-semibold text-amber-800 mb-2">Nomor WhatsApp</label>
-            <input type="tel" id="whatsapp" name="whatsapp" required
-                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent transition-all"
-                   placeholder="0812xxxxxxx">
-          </div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <!-- Pilihan Produk -->
-          <div>
-            <label for="produk" class="block text-sm font-semibold text-amber-800 mb-2">Pilihan Produk</label>
-            <select id="produk" name="produk" required
-                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent transition-all">
-              <option value="">Pilih produkmu 🥮</option>
-
-              <optgroup label=" 🥧 Strudel Series">
-                <option value="Strudel Browcok Keju Mesis|75000">Strudel Browcok Keju Mesis - Rp 75.000</option>
-                <option value="Strudel Browcok Full Mesis|75000">Strudel Browcok Full Mesis - Rp 75.000</option>
-                <option value="Strudel Browcok Pisang Coklat Keju|70000">Strudel Browcok Pisang Coklat Keju - Rp 70.000</option>
-                <option value="Strudel Browcok Full Keju|75000">Strudel Browcok Full Keju - Rp 75.000</option>
-                <option value="Strudel Browcok Coklat Keju Spesial|85000">Strudel Browcok Coklat Keju Spesial - Rp 85.000</option>
-                <option value="Strudel Browcok Chocochips|75000">Strudel Browcok Chocochips - Rp 75.000</option>
-                <option value="Strudel Browcok Pisang Coklat Keju Spesial|80000">Strudel Browcok Pisang Coklat Keju Spesial - Rp 80.000</option>
-              </optgroup>
-
-              <optgroup label="🍮 Bolen Series">
-                <option value="Bolen Mix 4 Varian|90000">Bolen Mix 4 Varian - Rp 90.000</option>
-                <option value="Bolen Pisang Coklat Keju|65000">Bolen Pisang Coklat Keju (10 pcs) - Rp 65.000</option>
-                <option value="Bolen Durian Keju|55000">Bolen Durian Keju (6 pcs) - Rp 55.000</option>
-                <option value="Bolen Nanas 10 pcs|70000">Bolen Nanas (10 pcs) - Rp 70.000</option>
-                <option value="Bolen Nanas 12 pcs|80000">Bolen Nanas (12 pcs) - Rp 80.000</option>
-                <option value="Bolen Brownies Coklat|40000">Bolen Brownies Coklat (6 pcs) - Rp 40.000</option>
-              </optgroup>
-            </select>
-          </div>
-
-          <!-- Jumlah -->
-          <div>
-            <label for="jumlah" class="block text-sm font-semibold text-amber-800 mb-2">Jumlah</label>
-            <input type="number" id="jumlah" name="jumlah" min="1" required
-                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent transition-all"
-                   placeholder="Jumlah pesanan">
-          </div>
-        </div>
-
-        <!-- Catatan -->
-        <div>
-          <label for="catatan" class="block text-sm font-semibold text-amber-800 mb-2">Catatan Tambahan</label>
-          <textarea id="catatan" name="catatan" rows="3"
-                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent transition-all"
-                    placeholder="Tulis catatan khusus (opsional)"></textarea>
-        </div>
-
-        <!-- Tombol -->
-        <button type="submit"
-                class="w-full bg-amber-600 hover:bg-amber-700 text-white py-4 rounded-lg text-lg font-semibold transition-all transform hover:scale-105">
-          Kirim Pesanan via WA
-        </button>
-      </form>
-
-      <script>
-        document.getElementById('orderForm').addEventListener('submit', function(e) {
-          e.preventDefault();
-
-          const nama = document.getElementById('nama').value.trim();
-          const whatsapp = document.getElementById('whatsapp').value.trim();
-          const produkValue = document.getElementById('produk').value;
-          const jumlah = document.getElementById('jumlah').value;
-          const catatan = document.getElementById('catatan').value.trim();
-
-          if (!produkValue) {
-            alert('Silakan pilih produk terlebih dahulu 🥐');
-            return;
-          }
-
-          const [produk, harga] = produkValue.split('|');
-          const total = Number(harga) * Number(jumlah);
-          const pesan =
-            `Halo! Saya ingin pesan:\n\n` +
-            `- Nama: ${nama}\n- WhatsApp: ${whatsapp}\n- Produk: ${produk}\n- Jumlah: ${jumlah}\n- Total: Rp ${total.toLocaleString('id-ID')}\n` +
-            (catatan ? `- Catatan: ${catatan}\n\n` : '\n') +
-            `Terima kasih :)`;
-
-          const nomorWA = '6283173901708'; // Ganti dengan nomor WhatsApp tujuan
-          const url = `https://wa.me/${nomorWA}?text=${encodeURIComponent(pesan)}`;
-          window.open(url, '_blank');
-
-          // Reset form
-          document.getElementById('orderForm').reset();
-        });
-      </script>
-    </div>
-  </div>
-</section>
-
     <!-- Footer -->
-    <footer class="bg-amber-900 text-white py-9 px-4">
-        <div class="max-w-7xl mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div>
-                    <h1 class="text-2xl font-bold text-amber-300 mb-4">Muhajir’s Kitchen</h1>
-                    <p class="text-amber-200 mb-4">
-                        Strudel dan Bolen homemade premium — enak, berkualitas, dan halalan thoyyiban.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="https://instagram.com/ummuzubairal" 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        class="text-amber-200 hover:text-white transition-colors">
-                        <i class="fab fa-instagram text-xl"></i>
-                        </a>
-
-                        <a href="https://www.facebook.com/mchewie" 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        class="text-amber-200 hover:text-white transition-colors duration-200">
-                        <i class="fab fa-facebook text-xl"></i>
-                        </a>
-
-                        <a href="https://www.threads.net/@ummuzubairal" 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        class="text-amber-200 hover:text-white transition-colors">
-                        <i class="fas fa-at text-xl"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Kontak Kami</h4>
-                    <div class="space-y-2 text-amber-200">
-                        <p><i class="fas fa-map-marker-alt mr-2"></i>Jl. KH. M. Said RT 08/RW 03, Kel. Karyajaya, Kec. Kertapati, Palembang</p>
-                        <p><i class="fas fa-phone mr-2"></i>0831-7390-1708</p>
-                        <p><i class="fas fa-clock mr-2"></i>Setiap hari: 08.00 - 16.00</p>
-                    </div>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Navigasi</h4>
-                    <div class="space-y-2">
-                        <a href="#home" class="block text-amber-200 hover:text-white transition-colors">Beranda</a>
-                        <a href="#products" class="block text-amber-200 hover:text-white transition-colors">Produk</a>
-                        <a href="#services" class="block text-amber-200 hover:text-white transition-colors">Layanan</a>
-                        <a href="#faq" class="block text-amber-200 hover:text-white transition-colors">FAQ</a>
-                        <a href="#order" class="block text-amber-200 hover:text-white transition-colors">Pesan</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="border-t border-amber-800 mt-8 pt-8 text-center text-amber-200">
-                <p>&copy; 2025 Muhajir’s Kitchen. All rights reserved.</p>
-            </div>
+    <!-- <footer class="bg-amber-900 text-white py-12 px-4">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8"> -->
+        <!-- Brand Info -->
+        <!-- <div>
+        <h1 class="text-2xl font-bold text-amber-300 mb-4">Oh My Brownite</h1>
+        <p class="text-amber-200 mb-4">
+            Donat Labu, Brownies & Savory Croissants homemade premium
+        </p>
+        <div class="flex space-x-4">
+            <a href="https://instagram.com/oh.mybrownite" target="_blank" rel="noopener noreferrer"
+            class="text-amber-200 hover:text-white transition-colors">
+            <i class="fab fa-instagram text-xl"></i>
+            </a> -->
+            <!-- <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+            class="text-amber-200 hover:text-white transition-colors">
+            <i class="fab fa-facebook text-xl"></i>
+            </a> -->
+            <!-- <a href="https://www.threads.net/@oh.mybrownite" target="_blank" rel="noopener noreferrer"
+            class="text-amber-200 hover:text-white transition-colors">
+            <i class="fas fa-at text-xl"></i>
+            </a>
         </div>
-    </footer>
+        </div> -->
+
+        <!-- Kontak -->
+        <!-- <div>
+        <h4 class="text-lg font-semibold mb-4">Kontak Kami</h4>
+        <div class="space-y-2 text-amber-200 text-sm">
+            <p><i class="fas fa-map-marker-alt mr-2"></i>Jl. Lebah Indah, Pasar Rebo, Jakarta Timur</p>
+            <p><i class="fas fa-phone mr-2"></i>0877-8179-2762</p>
+            <p><i class="fas fa-clock mr-2"></i>Setiap hari: 08.00 - 16.00</p>
+        </div>
+        </div> -->
+
+        <!-- Navigasi -->
+        <!-- <div>
+        <h4 class="text-lg font-semibold mb-4">Navigasi</h4>
+        <div class="space-y-2 text-sm">
+            <a href="#home" class="block text-amber-200 hover:text-white transition-colors">Beranda</a>
+            <a href="#products" class="block text-amber-200 hover:text-white transition-colors">Produk</a> -->
+            <!-- <a href="#services" class="block text-amber-200 hover:text-white transition-colors">Layanan</a>
+            <a href="#faq" class="block text-amber-200 hover:text-white transition-colors">FAQ</a> -->
+        <!-- </div>
+        </div>
+    </div>
+
+    <div class="border-t border-amber-800 mt-8 pt-6 text-center text-amber-200 text-sm">
+        <p>&copy; 2025 Oh My Brownite. All rights reserved.</p>
+    </div>
+    </footer> -->
+
 
     <!-- Floating WhatsApp Button -->
     <a id="whatsappBtn"
-        href="https://wa.me/6283173901708?text=Halo%20Muhajir's%20Kitchen!%20Saya%20ingin%20pesan%20Strudel%20atau%20Bolen%20Anda."
+        href="https://wa.me/6287781792762?text=Halo,%20Oh%20My%20Brownite!%20Saya%20ingin%20pesan%20Donat%20Labu%20dan%20Brownies%20Anda." 
         target="_blank" rel="noopener noreferrer"
         class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-xl transition transform hover:scale-110 animate-float z-50 
                 after:content-[''] after:absolute after:inset-0 after:rounded-full after:animate-ping-slow after:bg-green-400/30"
@@ -1462,12 +1075,12 @@ document.querySelectorAll('.accordion-header').forEach(header => {
     </a>
 
     <!-- Back to Top Button -->
-        <button id="backToTop"
-            class="fixed bottom-7 right-24 w-14 h-14 flex items-center justify-center rounded-full bg-amber-600 hover:bg-amber-700 text-white font-bold text-3xl shadow-lg transition-all duration-500 opacity-0 z-50">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
-            </svg>
-        </button>
+    <button id="backToTop"
+        class="fixed bottom-7 right-24 w-14 h-14 flex items-center justify-center rounded-full bg-amber-600 hover:bg-amber-700 text-white font-bold text-3xl shadow-lg transition-all duration-500 opacity-0 z-50">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+        </svg>
+    </button>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -1501,30 +1114,27 @@ document.querySelectorAll('.accordion-header').forEach(header => {
             /* ------------------------------
             🧭 Navbar Scroll Effect
             ------------------------------ */
+            const navbar = document.querySelector('.navbar');
+            const lines = document.querySelectorAll('.hamburger .line');
+            const navLinks = document.querySelectorAll('.nav-link');
 
-  const navbar = document.querySelector('.navbar');
-  const lines = document.querySelectorAll('.hamburger .line');
-  const navLinks = document.querySelectorAll('.nav-link');
+            window.addEventListener('scroll', () => {
+                if (!navbar) return;
 
-  window.addEventListener('scroll', () => {
-    if (!navbar) return;
+                const scrolled = window.scrollY > 50;
+                navbar.classList.toggle('scrolled', scrolled);
 
-    const scrolled = window.scrollY > 50;
-    navbar.classList.toggle('scrolled', scrolled);
+                // Ubah warna hanya untuk nav link & hamburger
+                navLinks.forEach(link => {
+                link.classList.remove('text-white', 'text-white/70', 'text--30');
+                link.classList.add(scrolled ? 'text-white' : 'text-white/70', 'text--30');
+                });
 
-    // Ubah warna hanya untuk nav link & hamburger
-    navLinks.forEach(link => {
-      link.classList.remove('text-white', 'text-amber-300');
-      link.classList.add(scrolled ? 'text-white' : 'text-amber-300');
-    });
-
-    lines.forEach(line => {
-      line.classList.remove('bg-white', 'bg-[#E6D18B]');
-      line.classList.add(scrolled ? 'bg-white' : 'bg-[#E6D18B]');
-    });
-  });
-
-
+                lines.forEach(line => {
+                line.classList.remove('bg-white', 'bg-[#E6D18B]');
+                line.classList.add(scrolled ? 'bg-white' : 'bg-[#E6D18B]');
+                });
+            });
         });
 
         // Hero Slider tanpa indikator
